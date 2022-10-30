@@ -445,7 +445,9 @@ var npcdict = {
         "dislikes": [
             "Demolitionist"
         ],
-        "hates": [],
+        "hates": [
+            "Angler"
+        ],
         "weighting": 1.0
     },
     "Bandit": {
