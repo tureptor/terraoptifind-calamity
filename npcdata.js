@@ -397,8 +397,10 @@ var npcdict = {
         "weighting": 1.0
     },
     "Santa Claus": {
-        "biome_liked": "Snow",
-        "biome_disliked": "Desert",
+        "biome_loved": "Snow",
+        "biome_liked": "",
+        "biome_disliked": "",
+        "biome_hated": "Desert",
         "loves": [],
         "likes": [],
         "dislikes": [],
@@ -430,6 +432,81 @@ var npcdict = {
         "loves": [],
         "likes": [],
         "dislikes": [],
+        "hates": [],
+        "weighting": 1.0
+    },
+    "Sea King": {
+        "biome_liked": "Ocean",
+        "biome_disliked": "Desert",
+        "loves": [],
+        "likes": [
+            "Pirate"
+        ],
+        "dislikes": [
+            "Demolitionist"
+        ],
+        "hates": [],
+        "weighting": 1.0
+    },
+    "Bandit": {
+        "biome_liked": "Desert",
+        "biome_disliked": "Jungle",
+        "loves": [],
+        "likes": [
+            "Goblin Tinkerer"
+        ],
+        "dislikes": [
+            "Dryad"
+        ],
+        "hates": [],
+        "weighting": 1.0
+    },
+    "Drunk Princess": {
+        "biome_loved": "Hallow",
+        "biome_liked": "Ocean",
+        "biome_disliked": "Desert",
+        "biome_hated": "Caverns",
+        "loves": [
+            "Stylist",
+            "Zoologist"
+        ],
+        "likes": [
+            "Party Girl",
+            "Truffle"
+        ],
+        "dislikes": [
+            "Tavernkeep",
+            "Tax Collector"
+        ],
+        "hates": [
+            "Angler",
+            "Goblin Tinkerer"
+        ],
+        "weighting": 1.0
+    },
+    "Archmage": {
+        "biome_liked": "Snow",
+        "biome_disliked": "Desert",
+        "loves": [],
+        "likes": [
+            "Wizard"
+        ],
+        "dislikes": [
+            "Cyborg"
+        ],
+        "hates": [],
+        "weighting": 1.0
+    },
+    "Brimstone Witch": {
+        "biome_liked": "Forest",
+        "biome_disliked": "",
+        "loves": [],
+        "likes": [
+            "Clothier"
+        ],
+        "dislikes": [
+            "Party Girl"
+        ],
         "hates": [],
         "weighting": 1.0
     }

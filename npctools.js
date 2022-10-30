@@ -20,22 +20,22 @@ function oneHappiness(name, biome, neighbours) {
   }
 
   // right biome
-  if (biome.includes(npc["biome_liked"])) {
-    // too lazy to make "biome_loved/hated" just for santa
-    if (name === "Santa Claus") {
-      happ *= 0.88
-    } else {
-      happ *= 0.94
-    }
+
+  if (("biome_loved" in npc) && (biome.includes(npc["biome_loved"]))) {
+    happ *= 0.88
+  }
+
+  else if (biome.includes(npc["biome_liked"])) {
+    happ *= 0.94
   }
 
   // wrong biome
-  else if (biome.includes(npc["biome_disliked"])) {
-    if (name === "Santa Claus") {               
-      happ *= 1.12
-    } else {           
-      happ *= 1.06
-    } 
+  else if (biome.includes(npc["biome_disliked"])) {         
+    happ *= 1.06
+  }
+  
+  else if (("biome_hated" in npc) && (biome.includes(npc["biome_hated"]))) {
+    happ *= 1.12
   }
 
   // neighbours
